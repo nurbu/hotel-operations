@@ -1,6 +1,7 @@
 package com.pluralsight;
 
 public class Employee {
+
     private int employeeId;
     private String name;
     private String department;
@@ -66,5 +67,5 @@ public class Employee {
     public double getOvertimeHours() {
         return hoursWorked >= 40 ? hoursWorked - 40 : 0;
     }
-    
+
 }

@@ -23,11 +23,11 @@ public class Room {
         this.price = price;
     }
 
-    public boolean isOcccupied() {
+    public boolean isOccupied() {
         return isOccupied;
     }
 
-    public void setOcccupied(boolean occcupied) {
+    public void setOccupied(boolean occcupied) {
         isOccupied = occcupied;
     }
 
@@ -37,13 +37,5 @@ public class Room {
 
     public void setDirty(boolean dirty) {
         isDirty = dirty;
-    }
-
-    public boolean isAvailable() {
-        return isAvailable;
-    }
-
-    public void setAvailable(boolean available) {
-        isAvailable = available;
     }
 }
