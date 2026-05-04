@@ -8,7 +8,6 @@ public class Reservation {
 
     public Reservation(String roomType, int numberOfDays, boolean isWeekend) {
         this.roomType = roomType;
-        this.roomPrice = roomPrice;
         this.numberOfDays = numberOfDays;
         this.isWeekend = isWeekend;
     }
