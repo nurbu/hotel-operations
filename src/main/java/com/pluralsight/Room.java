@@ -27,8 +27,8 @@ public class Room {
         return isOccupied;
     }
 
-    public void setOccupied(boolean occcupied) {
-        isOccupied = occcupied;
+    public void setOccupied(boolean occupied) {
+        isOccupied = occupied;
     }
 
     public boolean isDirty() {
