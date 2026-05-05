@@ -7,8 +7,8 @@ public class Employee {
     private String department;
     private double payRate;
     private double hoursWorked;
-    private int startTime;
-    private int endTime;
+    private double startTime;
+    private double endTime;
     private boolean clockedIn = false;
 
     public Employee(int employeeId, String name, String department, double hoursWorked, double payRate) {
@@ -75,17 +75,19 @@ public class Employee {
         if (clockedIn) {
             endTime = time;
             clockedIn = false;
+            hoursWorked += endTime - startTime;
         } else {
             startTime = time;
             clockedIn = true;
+
         }
     }
 
-    public int getStartTime() {
+    public double getStartTime() {
         return startTime;
     }
 
-    public int getEndTime() {
+    public double getEndTime() {
         return endTime;
     }
 }
