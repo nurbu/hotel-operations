@@ -9,7 +9,6 @@ public class Employee {
     private double hoursWorked;
     private double startTime;
     private double endTime;
-    private boolean clockedIn = false;
 
     public Employee(int employeeId, String name, String department, double hoursWorked, double payRate) {
         this.employeeId = employeeId;
@@ -71,17 +70,21 @@ public class Employee {
         return hoursWorked >= 40 ? hoursWorked - 40 : 0;
     }
 
-    public void punchTimeCard(int time) {
-        if (clockedIn) {
-            endTime = time;
-            clockedIn = false;
-            hoursWorked += endTime - startTime;
-        } else {
-            startTime = time;
-            clockedIn = true;
-
-        }
+    public void punchIn(double time) {
+        startTime = time;
     }
+
+    public void punchOut(double time) {
+        endTime = time;
+        hoursWorked += endTime - startTime;
+    }
+
+    public void punchIn() {
+    }
+
+    public void punchOut() {
+    }
+
 
     public double getStartTime() {
         return startTime;
