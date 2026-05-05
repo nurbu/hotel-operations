@@ -42,4 +42,21 @@ public class Room {
     public boolean isAvailable() {
         return !isDirty && !isOccupied;
     }
+
+    public void checkIn() {
+        System.out.println("Checking In");
+        isOccupied = true;
+        isDirty = true;
+    }
+
+    public void cleanRoom() {
+        isOccupied = false;
+        isDirty = false;
+    }
+
+    public void checkOut() {
+        System.out.println("Checking Out");
+        cleanRoom();
+    }
+    
 }
