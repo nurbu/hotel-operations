@@ -22,4 +22,13 @@ public class Hotel {
         bookedBasicRooms = 0;
         bookedSuites = 0;
     }
+
+    public void setBookedBasicRooms(int bookedBasicRooms) {
+        this.bookedBasicRooms = bookedBasicRooms;
+    }
+
+    public void setBookedSuites(int bookedSuites) {
+        this.bookedSuites = bookedSuites;
+    }
+    
 }
