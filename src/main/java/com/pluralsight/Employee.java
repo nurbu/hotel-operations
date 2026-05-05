@@ -7,6 +7,8 @@ public class Employee {
     private String department;
     private double payRate;
     private double hoursWorked;
+    private int startTime;
+    private int endTime;
 
     public Employee(int employeeId, String name, String department, double hoursWorked, double payRate) {
         this.employeeId = employeeId;
@@ -68,4 +70,19 @@ public class Employee {
         return hoursWorked >= 40 ? hoursWorked - 40 : 0;
     }
 
+    public void punchIn(int startTime) {
+        this.startTime = startTime;
+    }
+
+    public int getStartTime() {
+        return startTime;
+    }
+
+    public void punchOut(int endTime) {
+        this.endTime = endTime;
+    }
+
+    public int getEndTime() {
+        return endTime;
+    }
 }
