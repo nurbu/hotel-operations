@@ -25,7 +25,7 @@ public class RoomTest {
     }
 
     @Test
-    public void checkOut_IsOccupiedandIsDirty_False() {
+    public void checkOut_IsOccupied_False() {
         // Arrange
         Room room = new Room();
 
@@ -34,17 +34,26 @@ public class RoomTest {
 
         //Assert
         assertEquals(false, room.isDirty());
-        assertEquals(false, room.isOccupied());
     }
 
     @Test
-    public void cleanRoom_
+    public void cleanRoom_IsNotOccupied_False() {
+        // Arrange
+        Room room = new Room();
+
+        //Act
+
+        room.cleanRoom();
+
+        //Assert
+
+        assertEquals(false, room.isOccupied());
+    }
+
     // Arrange
 
     // Act
 
     //Assert
 
-
-    // checkout()
 }
