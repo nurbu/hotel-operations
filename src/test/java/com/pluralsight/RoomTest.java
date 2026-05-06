@@ -8,7 +8,7 @@ public class RoomTest {
 
     // checkIn
     @Test
-    public void checkIn_IsOccupiedandIsDirty_True() {
+    public void checkIn_IsNotOccupiedandIsNotDirty_True() {
         // Arrange
 
         Room room = new Room();
