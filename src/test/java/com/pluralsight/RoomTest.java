@@ -36,6 +36,9 @@ public class RoomTest {
         assertEquals(false, room.isDirty());
         assertEquals(false, room.isOccupied());
     }
+
+    @Test
+    public void cleanRoom_
     // Arrange
 
     // Act

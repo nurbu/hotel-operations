@@ -50,13 +50,12 @@ public class Room {
     }
 
     public void cleanRoom() {
-        isOccupied = false;
         isDirty = false;
     }
 
     public void checkOut() {
         System.out.println("Checking Out");
-        cleanRoom();
+        isOccupied = false;
     }
-    
+
 }
