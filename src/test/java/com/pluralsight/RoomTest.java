@@ -28,6 +28,7 @@ public class RoomTest {
     public void checkOut_IsOccupied_False() {
         // Arrange
         Room room = new Room();
+        room.checkIn();
 
         // Act
         room.checkOut();
